@@ -1,6 +1,6 @@
 // MIN ATT-GÖRA-LISTA IDAG:
-// [ ] 1. Skapa Katt med namn, ras och chipnummer
-// [ ] 2. Gör kattens fält private och skapa getters
+// [x] 1. Skapa Katt med namn, ras och chipnummer
+// [x] 2. Gör kattens fält private och skapa getters
 // [ ] 3. Skapa KattHotell med en privat lista av katter
 // [ ] 4. Skapa metod för att checka in en katt
 // [ ] 5. Stoppa katter med samma chipnummer
@@ -9,6 +9,6 @@
 
 public class Main {
     static void main(String[] args) {
-        
+
     }
 }
