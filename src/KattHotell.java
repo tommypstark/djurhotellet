@@ -32,9 +32,18 @@ public class KattHotell {
         if (katter.isEmpty()) {
             System.out.println("Inga katter är incheckade.");
         } else {
-            for (Katt katt : katter) {
-                System.out.println(katt.getNamn() + " " + katt.getChipnummer() + " " + katt.getRas());
+            for (Katt k : katter) {
+                System.out.println(k.getNamn() + " " + k.getChipnummer() + " " + k.getRas());
             }
         }
+    }
+
+    public Katt hittaNamn(String namn) {
+        for (Katt k : katter) {
+            if (k.getNamn().equalsIgnoreCase(namn)) {
+                return k; // Träff: lämna över katten och avbryt metoden direkt!
+            }
+        }
+        return null;
     }
 }
