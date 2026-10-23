@@ -30,7 +30,7 @@ public class KattHotell {
 
     public void listaAlla() {
         if (katter.isEmpty()) {
-            System.out.println("\nInga katter är incheckade.");
+            System.out.println("\nInga katter är incheckade!");
         } else {
             for (Katt k : katter) {
                 System.out.println("\nNamn: " + k.getNamn() + "\nChip-nummer: " + k.getChipnummer() + "\nRas: " + k.getRas());
@@ -66,4 +66,9 @@ public class KattHotell {
         }
         return traffar;
     }
+
+    public void clearAll() {
+        katter.clear();
+    }
+
 }

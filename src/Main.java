@@ -48,7 +48,7 @@ public class Main {
                         System.out.println("\nKatt hittad:");
                         System.out.println("Namn: " + hittad.getNamn() + "\nChip-nummer: " + hittad.getChipnummer() + "\nRas: " + hittad.getRas());
                     } else {
-                        System.out.println("\nIngen katt med det namnet är incheckad här.");
+                        System.out.println("\nIngen katt med det namnet är incheckad här!");
                     }
                 }
                 case 4 -> {
@@ -66,7 +66,7 @@ public class Main {
                     String ras = scanner.nextLine();
                     List<Katt> traffar = hotell.hittaRas(ras);
                     if (traffar.isEmpty()) {
-                        System.out.println("\nInga katter av den rasen hittades.");
+                        System.out.println("\nInga katter av den rasen hittades!");
                     } else {
                         for (Katt k : traffar) {
                             System.out.println("\nNamn: " + k.getNamn() + "\nChip-nummer: " + k.getChipnummer() + "\nRas: " + k.getRas());
@@ -74,10 +74,11 @@ public class Main {
                     }
                 }
                 case 6 -> {
-                    //Töm hotellet
+                    hotell.clearAll();
+                    System.out.println("\nAlla katter har checkats ut!");
                 }
                 case 7 -> System.out.println("Avslutar programmet. Välkommen åter!");
-                default -> System.out.println("Ogiltigt val, försök igen.");
+                default -> System.out.println("Ogiltigt val, försök igen!");
             }
         }
     }
