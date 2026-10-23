@@ -56,4 +56,14 @@ public class KattHotell {
         }
         return false;
     }
+
+    public List<Katt> hittaRas(String ras) {
+        List<Katt> traffar = new ArrayList<>();
+        for (Katt k : katter) {
+            if (k.getRas().equalsIgnoreCase(ras)) {
+                traffar.add(k);
+            }
+        }
+        return traffar;
+    }
 }
